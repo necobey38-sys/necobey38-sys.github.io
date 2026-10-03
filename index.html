@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dünyanın 8. Harikası</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            padding: 50px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .hidden-content {
+            display: none;
+            margin-top: 30px;
+        }
+        .hidden-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Dünyanın Sekizinci Harikasını Görmek İçin Tıklayın!</h1>
+    
+    <!-- Butona tıklandığında aşağıdaki JavaScript fonksiyonu çalışır -->
+    <a class="btn" onclick="goster()">Harikayı Gör</a>
+
+    <!-- Doğrudan resim kaynağınız buraya entegre edildi -->
+    <div id="harikaResim" class="hidden-content">
+        <img src="https://ibb.co" alt="Dünyanın 8. Harikası">
+    </div>
+
+    <script>
+        function goster() {
+            // Butona basıldığında resmi görünür yapar
+            document.getElementById('harikaResim').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
